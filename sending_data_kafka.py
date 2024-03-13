@@ -23,7 +23,7 @@ producer = KafkaProducer(bootstrap_servers="localhost:9092")
 
 # List to store transactions for comparison
 generated_transactions = []
-num_transactions =10
+num_transactions =100
 for _ in range(num_transactions):
     transaction = faker_data.generate_transaction()
     

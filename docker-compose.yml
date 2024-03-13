@@ -1,6 +1,13 @@
 version: '3.8'
 
 services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
   zookeeper:
     image: confluentinc/cp-zookeeper:7.4.0
     hostname: zookeeper
@@ -15,11 +22,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-  # kafka:
-  #   image: bitnami/kafka
-  #   container_name: kafka
-  #   ports:
-  #     - "9092:9092"
+
   broker:
     image: confluentinc/cp-kafka:7.4.0
     hostname: broker
@@ -68,22 +71,22 @@ services:
       retries: 5
 
 
-  flink-master:
-    image: bde2020/flink-master:1.14.5-hadoop3.2
-    hostname: flink-master
-    container_name: flink-master
-    ports:
-      - "8080:8080"
-      - "8082:8082"
+  # flink-master:
+  #   image: bde2020/flink-master:1.14.5-hadoop3.2
+  #   hostname: flink-master
+  #   container_name: flink-master
+  #   ports:
+  #     - "8080:8080"
+  #     - "8082:8082"
 
-  flink-worker:
-    image: bde2020/flink-worker:1.14.5-hadoop3.2
-    hostname: flink-worker
-    container_name: flink-worker
-    environment:
-      - FLINK_MASTER_PORT_6123_TCP_ADDR=flink-master
-    depends_on:
-      - flink-master
+  # flink-worker:
+  #   image: bde2020/flink-worker:1.14.5-hadoop3.2
+  #   hostname: flink-worker
+  #   container_name: flink-worker
+  #   environment:
+  #     - FLINK_MASTER_PORT_6123_TCP_ADDR=flink-master
+  #   depends_on:
+  #     - flink-master
 
   schema_registry:
     image: confluent/schema-registry
@@ -144,7 +147,8 @@ services:
 networks:
   kafka-net:
     driver: bridge
-
+volumes:
+  mongodb-data:
 #  postgres:
 #    image: postgres:latest
 #    container_name: postgres
@@ -237,4 +241,4 @@ networks:
 #volumes:
 #  namenode:
 #  datanode:
-#  grafana-data:
+#  grafana-data:

@@ -12,17 +12,41 @@ MONGO_URI = 'mongodb://localhost:27017/'
 
 
 def insert_flagged_transactions_into_mongo():
-    mongo_client = MongoClient(MONGO_URI)
-    db = mongo_client['fraud_detection']
-    collection = db['flagged_transactions']
-    consumer = KafkaConsumer('fraud_transactions', bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS, auto_offset_reset='earliest', value_deserializer=lambda x: json.loads(x.decode('utf-8')))
-    fraud_count = 0
-    for message in consumer:
-        collection.insert_one(message.value)
-        fraud_count += 1
-        print(f"Inserted fraud transaction into MongoDB: {message.value}")
+    try:
+        mongo_client = MongoClient(MONGO_URI)
+        print("Connected successfully to MongoDB")
+    except Exception as e:
+        print(f"Failed to connect to MongoDB: {e}")
+        return  # Stop execution if connection fails
+
+    try:
+        db = mongo_client['fraud_detection']
+        collection = db['flagged_transactions']
+        consumer = KafkaConsumer('FLAGGED_TRANSACTION', bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS, auto_offset_reset='earliest', value_deserializer=lambda x: json.loads(x.decode('utf-8')))
+        fraud_count = 0
+        for message in consumer:
+            collection.insert_one(message.value)
+            fraud_count += 1
+            print(f"Inserted fraud transaction into MongoDB: {message.value}")
+            
+        print(f"Total fraudulent transactions inserted into MongoDB: {fraud_count}")
+    except Exception as e:
+        print(f"An error occurred while inserting data into MongoDB: {e}")
+    finally:
+        consumer.close()
+        mongo_client.close()
+        print("MongoDB connection closed.")
+    # mongo_client = MongoClient(MONGO_URI)
+    # db = mongo_client['fraud_detection']
+    # collection = db['flagged_transactions']
+    # consumer = KafkaConsumer('FLAGGED_TRANSACTIONS', bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS, auto_offset_reset='earliest', value_deserializer=lambda x: json.loads(x.decode('utf-8')))
+    # fraud_count = 0
+    # for message in consumer:
+    #     collection.insert_one(message.value)
+    #     fraud_count += 1
+    #     print(f"Inserted fraud transaction into MongoDB: {message.value}")
         
         
-    print(f"Total fraudulent transactions inserted into MongoDB: {fraud_count}")
-    consumer.close()
-    mongo_client.close()
+    # print(f"Total fraudulent transactions inserted into MongoDB: {fraud_count}")
+    # consumer.close()
+    # mongo_client.close()

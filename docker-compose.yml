@@ -20,7 +20,7 @@ services:
     healthcheck:
       test: [ "CMD", "bash", "-c", "echo 'ruok' | nc localhost 2181" ]
       interval: 10s
-      timeout: 5s
+      timeout: 10s
       retries: 5
 
   broker:
@@ -46,6 +46,7 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       KAFKA_JMX_PORT: 9101
       KAFKA_JMX_HOSTNAME: localhost
+
     healthcheck:
       test: [ "CMD", "bash", "-c", 'nc -z localhost 9092' ]
       interval: 10s

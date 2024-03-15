@@ -1,0 +1,101 @@
+card_number,amount,timestamp,location,merchant_category,currency,device_type
+213123711387756,207.12,1989-12-08T20:29:26,"{'city': 'Oscarchester', 'state': 'ID'}",Entertainment,MNT,Tablet
+4324674598676560,858.80,2008-10-05T11:07:36,"{'city': 'Williamville', 'state': 'DE'}",Electronics,XAF,Mobile
+213104260196707,714.53,2017-08-08T20:57:53,"{'city': 'West Charlenehaven', 'state': 'DE'}",Utilities,BIF,Mobile
+675905104104,133.69,1989-05-29T23:58:39,"{'city': 'Aguilarburgh', 'state': 'TX'}",Utilities,SEK,Desktop
+4005307151969586722,137.25,2021-07-14T00:20:08,"{'city': 'Davisstad', 'state': 'IL'}",Grocery,MRO,Desktop
+4255804554967604851,543.23,1997-10-02T17:05:22,"{'city': 'East Bradley', 'state': 'OH'}",Electronics,TND,Desktop
+344447622949699,876.28,2014-04-03T11:03:49,"{'city': 'West Andrew', 'state': 'GA'}",Electronics,NIO,Mobile
+30581873220597,496.36,1987-01-25T19:19:00,"{'city': 'Davisborough', 'state': 'MS'}",Entertainment,MDL,Tablet
+213103835617643,975.37,1991-12-27T01:32:21,"{'city': 'South Cathychester', 'state': 'IN'}",Grocery,CZK,Desktop
+676122985002,812.06,1981-10-02T11:29:28,"{'city': 'Khanshire', 'state': 'AR'}",Grocery,TMT,Desktop
+4467024449131,678.93,1977-07-03T00:32:07,"{'city': 'Port Chelsea', 'state': 'NV'}",Entertainment,EGP,Tablet
+3596227131658190,248.23,2001-11-15T06:16:40,"{'city': 'North Kari', 'state': 'MT'}",Grocery,ARS,Mobile
+3533852894859705,982.77,2003-11-06T01:49:03,"{'city': 'Brittneychester', 'state': 'WV'}",Utilities,GHS,Mobile
+503813835157,234.96,1984-09-22T12:29:29,"{'city': 'South Davidshire', 'state': 'TX'}",Electronics,SVC,Mobile
+4074433919579,739.01,1973-11-18T16:00:26,"{'city': 'Perryport', 'state': 'IN'}",Utilities,JMD,Mobile
+345220617003866,778.19,2005-07-08T22:34:16,"{'city': 'Lake Robertfurt', 'state': 'GA'}",Clothing,THB,Tablet
+4275889066479515380,685.60,1976-10-24T21:40:00,"{'city': 'Troymouth', 'state': 'PR'}",Electronics,HNL,Desktop
+576843968248,768.47,1997-10-31T19:59:09,"{'city': 'Port Susan', 'state': 'PR'}",Grocery,CZK,Desktop
+6011466568522004,598.59,1988-01-29T22:30:17,"{'city': 'West Brendastad', 'state': 'SC'}",Utilities,ERN,Desktop
+4274491863727410,321.24,2005-01-11T19:19:50,"{'city': 'North Elizabethport', 'state': 'NJ'}",Entertainment,TVD,Tablet
+4705829408677484,240.80,2022-06-17T09:43:54,"{'city': 'South Johnhaven', 'state': 'MH'}",Entertainment,TTD,Mobile
+3585052562927481,608.09,2023-04-25T05:21:54,"{'city': 'West Paulshire', 'state': 'WI'}",Utilities,GHS,Mobile
+4341761395685478890,929.11,2011-04-20T06:35:12,"{'city': 'East Edwinton', 'state': 'MT'}",Electronics,THB,Desktop
+30205069728276,831.16,1988-07-04T23:25:14,"{'city': 'New Josephchester', 'state': 'HI'}",Grocery,KGS,Desktop
+2293030787686871,195.26,1979-07-30T17:13:08,"{'city': 'Ashleytown', 'state': 'GA'}",Entertainment,THB,Tablet
+3582561307457243,84.96,1993-03-07T08:11:56,"{'city': 'Taylorville', 'state': 'SC'}",Entertainment,UYU,Tablet
+180049915230881,704.56,1979-12-13T11:17:17,"{'city': 'Ortizmouth', 'state': 'MD'}",Entertainment,SAR,Mobile
+30079309987855,841.19,2016-03-01T14:02:34,"{'city': 'East Matthew', 'state': 'WV'}",Entertainment,GYD,Mobile
+341247095348376,120.20,2017-03-30T03:21:47,"{'city': 'Rodriguezview', 'state': 'TN'}",Grocery,IRR,Desktop
+4294891905557139000,670.52,2006-05-29T20:16:44,"{'city': 'Bonnieport', 'state': 'TX'}",Grocery,ZMW,Tablet
+3513195622039966,854.23,2018-10-09T22:17:01,"{'city': 'Starkmouth', 'state': 'WV'}",Clothing,CUP,Tablet
+3562271955969457,40.05,2010-08-13T23:51:41,"{'city': 'North Katelyn', 'state': 'VA'}",Grocery,BTN,Desktop
+502051481138,238.21,1988-04-21T17:30:18,"{'city': 'Port Matthewland', 'state': 'SC'}",Entertainment,THB,Tablet
+676253750043,946.56,2018-05-02T10:09:57,"{'city': 'Davidside', 'state': 'GU'}",Entertainment,TRY,Mobile
+2718428648796334,692.78,2008-03-13T02:34:52,"{'city': 'Jeffreyfort', 'state': 'WA'}",Electronics,PHP,Mobile
+4934668364306,880.60,2016-09-13T18:27:44,"{'city': 'South Austin', 'state': 'NY'}",Electronics,XDR,Desktop
+6011267636454935,758.60,2019-06-11T18:27:19,"{'city': 'Richardmouth', 'state': 'SC'}",Clothing,IQD,Mobile
+213105936902683,421.55,2020-04-29T15:43:05,"{'city': 'East Andrew', 'state': 'HI'}",Electronics,XPF,Mobile
+180075145928622,63.50,1970-03-30T08:59:05,"{'city': 'West Joshuaborough', 'state': 'NJ'}",Grocery,KGS,Tablet
+3563740274100605,878.29,2020-06-12T07:45:44,"{'city': 'Moorebury', 'state': 'OH'}",Electronics,UYU,Mobile
+30512119497699,639.42,1999-12-24T06:23:11,"{'city': 'Port Sylvia', 'state': 'SC'}",Entertainment,TND,Desktop
+36474315019948,118.87,2022-02-25T05:30:44,"{'city': 'Adammouth', 'state': 'MO'}",Entertainment,CZK,Tablet
+213175272765796,696.16,2011-12-02T23:50:52,"{'city': 'Christymouth', 'state': 'MA'}",Electronics,SYP,Desktop
+4040544885848052,77.17,1971-05-12T01:19:51,"{'city': 'Kathrynbury', 'state': 'OH'}",Utilities,MVR,Tablet
+30430272227706,236.49,2024-02-24T17:50:46,"{'city': 'Port Davidland', 'state': 'WI'}",Clothing,XOF,Tablet
+570748980572,972.67,1984-11-06T14:23:06,"{'city': 'Moniqueview', 'state': 'VI'}",Clothing,LYD,Mobile
+213126340630785,649.03,1986-03-11T19:26:43,"{'city': 'Jasonmouth', 'state': 'MD'}",Grocery,PHP,Tablet
+3552003932031552,202.11,2010-10-26T18:13:03,"{'city': 'Christinafurt', 'state': 'TX'}",Grocery,AOA,Mobile
+344006349889560,502.28,2020-05-06T07:51:15,"{'city': 'Aliciabury', 'state': 'LA'}",Entertainment,PEN,Mobile
+213126915172965,704.38,1978-01-18T17:09:08,"{'city': 'Hillstad', 'state': 'NM'}",Entertainment,CZK,Mobile
+675950066810,328.74,2019-12-08T10:14:10,"{'city': 'Mccarthyshire', 'state': 'FL'}",Entertainment,SDG,Mobile
+562839720538,343.25,2017-06-26T19:25:19,"{'city': 'Christineberg', 'state': 'AZ'}",Entertainment,RUB,Tablet
+375673179870804,768.81,1993-08-23T08:15:27,"{'city': 'Avilaview', 'state': 'SD'}",Clothing,IDR,Desktop
+4812206497469122273,520.58,1971-02-27T03:18:13,"{'city': 'Davidport', 'state': 'DE'}",Entertainment,DZD,Mobile
+2272651609774176,851.71,2014-01-10T02:14:31,"{'city': 'East Kimberlyville', 'state': 'OH'}",Utilities,BIF,Mobile
+6599263954369441,646.59,2005-07-31T23:51:33,"{'city': 'Cooperbury', 'state': 'GU'}",Grocery,KZT,Mobile
+676270095539,647.69,1986-12-28T13:10:38,"{'city': 'Laurenshire', 'state': 'IN'}",Electronics,MKD,Tablet
+376498327224418,221.15,1976-03-08T16:35:03,"{'city': 'Vanessaton', 'state': 'AL'}",Entertainment,ANG,Mobile
+4728146237074699,854.40,2018-10-28T17:47:04,"{'city': 'Port Victor', 'state': 'SC'}",Grocery,BOB,Desktop
+2353117415021204,87.03,2001-12-21T17:17:01,"{'city': 'Tracyport', 'state': 'GA'}",Grocery,CNY,Desktop
+6011478088166956,766.59,2018-11-09T08:22:34,"{'city': 'Lake Melissaside', 'state': 'WI'}",Electronics,IDR,Tablet
+3556277706209257,880.58,1997-10-13T18:32:34,"{'city': 'Lake Lindsay', 'state': 'TX'}",Entertainment,BBD,Tablet
+341747195519651,648.76,1975-02-01T00:43:27,"{'city': 'South Elizabeth', 'state': 'ND'}",Entertainment,UYU,Mobile
+4434572997642554,433.32,1993-08-21T14:32:30,"{'city': 'North Christopherberg', 'state': 'NE'}",Utilities,MWK,Tablet
+2716944968151969,383.48,1975-08-01T20:42:28,"{'city': 'South Danielton', 'state': 'GA'}",Grocery,BWP,Mobile
+6582644832126716,196.93,1998-09-21T10:06:28,"{'city': 'South Tinamouth', 'state': 'IA'}",Clothing,MRO,Mobile
+4678585523314766,146.09,1995-02-07T02:35:44,"{'city': 'South Christophershire', 'state': 'CT'}",Entertainment,MMK,Mobile
+4432867533440873,30.43,2006-09-27T05:58:17,"{'city': 'Josephville', 'state': 'WY'}",Grocery,CHF,Tablet
+3526788211836894,31.23,2005-03-08T13:23:31,"{'city': 'Lake Thomas', 'state': 'NH'}",Clothing,PKR,Tablet
+4041392708234624,625.59,2010-04-08T05:19:15,"{'city': 'Boydhaven', 'state': 'AZ'}",Electronics,TND,Tablet
+4497728570045250,176.92,1983-03-21T21:23:43,"{'city': 'Danielmouth', 'state': 'FM'}",Grocery,GYD,Desktop
+2605085335805574,473.10,1997-08-20T06:00:00,"{'city': 'South Aprilberg', 'state': 'VT'}",Utilities,ARS,Mobile
+576919956572,797.40,1977-01-03T12:09:31,"{'city': 'Dannyview', 'state': 'TX'}",Entertainment,LSL,Mobile
+4446754297796043,767.16,2022-09-14T13:05:42,"{'city': 'Kristinaburgh', 'state': 'MI'}",Clothing,BHD,Tablet
+3593786670214072,388.80,2000-06-28T23:27:44,"{'city': 'Webbhaven', 'state': 'ID'}",Electronics,MKD,Desktop
+4581231102912748,981.12,2021-05-20T22:38:00,"{'city': 'Juliaport', 'state': 'WA'}",Clothing,JEP,Mobile
+4201826216020,455.03,2009-07-02T13:00:37,"{'city': 'Austinstad', 'state': 'LA'}",Entertainment,RWF,Desktop
+4184599918712985751,37.27,1997-04-22T13:22:32,"{'city': 'West Roy', 'state': 'MN'}",Electronics,BYR,Mobile
+213170769563291,172.30,2000-05-28T23:44:54,"{'city': 'South Bruceberg', 'state': 'WY'}",Utilities,BMD,Tablet
+213164658213662,383.14,2018-09-04T02:16:45,"{'city': 'Jeffreyhaven', 'state': 'WV'}",Entertainment,ETB,Desktop
+6011261136962794,869.35,1981-09-17T23:17:33,"{'city': 'Danastad', 'state': 'MH'}",Entertainment,GEL,Mobile
+377288671210942,100.40,1978-06-02T10:03:54,"{'city': 'Rachelberg', 'state': 'AK'}",Grocery,KWD,Tablet
+5281852124164727,496.38,2010-02-14T20:58:36,"{'city': 'Shafferstad', 'state': 'ID'}",Clothing,ANG,Desktop
+2241226744634540,624.12,2013-04-03T14:42:33,"{'city': 'Hayestown', 'state': 'NC'}",Electronics,ISK,Mobile
+372839906792420,465.83,2012-02-27T07:55:40,"{'city': 'Johnside', 'state': 'MI'}",Entertainment,PEN,Desktop
+2254411219247119,236.19,2021-08-07T23:32:45,"{'city': 'Kaitlynbury', 'state': 'AZ'}",Entertainment,KWD,Tablet
+3583116554313851,948.64,2007-10-24T22:46:10,"{'city': 'West Jessicaport', 'state': 'RI'}",Entertainment,CNY,Mobile
+2273780981253001,57.00,1987-12-02T04:32:08,"{'city': 'Howellville', 'state': 'MD'}",Utilities,SAR,Tablet
+568580313613,943.40,2002-05-26T11:58:54,"{'city': 'Sonyatown', 'state': 'VA'}",Utilities,BDT,Desktop
+4449871549512965,840.30,1990-01-08T04:26:36,"{'city': 'Charlesberg', 'state': 'CO'}",Utilities,SYP,Desktop
+38260393224999,830.20,2008-06-26T18:23:46,"{'city': 'Collierfort', 'state': 'NM'}",Electronics,KWD,Tablet
+6011907078465127,94.42,1985-12-11T16:16:57,"{'city': 'Jordanmouth', 'state': 'MH'}",Grocery,RWF,Desktop
+4622400286644,73.96,1994-10-14T12:42:33,"{'city': 'Navarrobury', 'state': 'ID'}",Clothing,YER,Desktop
+6552767117650484,772.15,2021-01-22T10:04:29,"{'city': 'North Josephport', 'state': 'MS'}",Entertainment,MYR,Desktop
+4233870087098296,515.20,1984-05-09T19:01:31,"{'city': 'South Richardfort', 'state': 'MS'}",Utilities,BWP,Desktop
+675967307140,27.88,1981-09-30T12:33:24,"{'city': 'South Christinafort', 'state': 'WY'}",Electronics,SGD,Tablet
+060447788161,620.47,2018-10-01T13:42:36,"{'city': 'South Ray', 'state': 'OR'}",Entertainment,GIP,Mobile
+378771016768822,733.02,1986-02-24T21:55:07,"{'city': 'Michaelhaven', 'state': 'GU'}",Electronics,MXN,Tablet
+676118187506,43.65,2015-02-12T14:03:34,"{'city': 'Laurenstad', 'state': 'AK'}",Utilities,COP,Desktop
+4346267133028951,312.27,2023-06-04T19:10:24,"{'city': 'Cindyshire', 'state': 'KS'}",Electronics,IQD,Desktop

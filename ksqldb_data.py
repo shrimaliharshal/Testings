@@ -26,27 +26,20 @@ def execute_ksql_command(ksql_url, headers, sql_command):
 def setup_ksql():
     # Execute SQL commands to create stream, function, and flagged transactions
     drop_flagged_transactions_sql = {
-        "ksql": "DROP STREAM IF EXISTS FLAGGED_TRANSACTIONS DELETE TOPIC;"
+        "ksql": "DROP STREAM IF EXISTS FLAGGED_TRANSACTIONS ;"
     }
     execute_ksql_command(ksql_url, headers, drop_flagged_transactions_sql)
     create_stream_sql = {
-        "ksql": """CREATE STREAM IF NOT EXISTS TRANSACTIONS (
-            CARD_NUMBER VARCHAR,
-            AMOUNT DOUBLE,
-            LOCATION STRUCT<CITY VARCHAR, STATE VARCHAR>,
-            TIMESTAMP VARCHAR,
-            MERCHANT_CATEGORY VARCHAR,
-            CURRENCY VARCHAR,
-            DEVICE_TYPE VARCHAR
-        ) WITH (KAFKA_TOPIC='credit_card_transactions', VALUE_FORMAT='JSON');"""
+        "ksql": "CREATE STREAM IF NOT EXISTS TRANSACTIONS (CARD_NUMBER VARCHAR,AMOUNT DOUBLE,LOCATION STRUCT<CITY VARCHAR, STATE VARCHAR>,TIMESTAMP VARCHAR, MERCHANT_CATEGORY VARCHAR,CURRENCY VARCHAR,DEVICE_TYPE VARCHAR) WITH (KAFKA_TOPIC='credit_card_transactions', VALUE_FORMAT='JSON');"
     }
-    # Define SQL command to create the flagged transactions stream
+    # SQL command to create the flagged transactions stream
+    drop_flagged_transactions_sql = {
+    "ksql": "DROP STREAM IF EXISTS FLAGGED_TRANSACTION;"
+}
+    execute_ksql_command(ksql_url, headers, drop_flagged_transactions_sql)
+
     create_flagged_transactions_sql = {
-        "ksql": """CREATE STREAM FLAGGED_TRANSACTION AS
-        SELECT * FROM TRANSACTIONS
-        WHERE AMOUNT > 500
-        OR MERCHANT_CATEGORY IN ('Electronics', 'Entertainment')
-        OR DEVICE_TYPE = 'Tablet';"""
+        "ksql": "CREATE STREAM FLAGGED_TRANSACTION AS SELECT * FROM TRANSACTIONS WHERE AMOUNT > 200 OR MERCHANT_CATEGORY IN ('Electronics', 'Entertainment') OR DEVICE_TYPE = 'Tablet';"
     }
     execute_ksql_command(ksql_url, headers, create_stream_sql)
     print("Starting ksqlDB setup...")

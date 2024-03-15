@@ -1,6 +1,40 @@
 version: '3.8'
 
 services:
+  
+  # flink-jobmanager:
+  #   image: flink:1.13.0 # Use the specific version that matches the Kafka connector
+  #   volumes:
+  #     - ./your/actual/path/flink-sql-connector-kafka_2.11-1.13.0.jar:/opt/flink/lib/flink-sql-connector-kafka_2.11-1.13.0.jar
+  #   environment:
+  #     - JOB_MANAGER_RPC_ADDRESS=flink-jobmanager
+  #   ports:
+  #     - "8081:8081"
+  #   command: jobmanager
+  jobmanager:
+    image: flink:1.13.0
+    platform: linux/x86_64
+    ports:
+      - "8081:8081"
+    environment:
+      - JOB_MANAGER_RPC_ADDRESS=jobmanager
+
+  taskmanager:
+    image: flink:1.13.0
+    platform: linux/x86_64
+    depends_on:
+      - jobmanager
+    environment:
+      - JOB_MANAGER_RPC_ADDRESS=jobmanager
+      - TASK_MANAGER_NUMBER_OF_TASK_SLOTS=2
+
+  sql-client:
+    image: flink:1.13.0 # Assuming you're using Flink's image for SQL client purposes
+    platform: linux/x86_64
+    depends_on:
+      - jobmanager
+    volumes:
+      - ./sql-client-scripts:/opt/flink/usrlib
   mongodb:
     image: mongo
     container_name: mongodb
@@ -150,6 +184,7 @@ networks:
     driver: bridge
 volumes:
   mongodb-data:
+  flink_data:
 #  postgres:
 #    image: postgres:latest
 #    container_name: postgres

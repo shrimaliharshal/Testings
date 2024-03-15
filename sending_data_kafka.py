@@ -13,15 +13,14 @@ topic_name = "credit_card_transactions"
 def create_kafka_topic(topic_name, bootstrap_servers="localhost:9092"):
 
     admin_client = KafkaAdminClient(bootstrap_servers=bootstrap_servers)
-
-    # Try to create the topic. If it already exists, catch the exception.
+    
     try:
         admin_client.create_topics(new_topics=[NewTopic(name=topic_name, num_partitions=1, replication_factor=1)])
         print(f"Topic {topic_name} created")
     except TopicAlreadyExistsError:
         print(f"Topic {topic_name} already exists")
 
-# Kafka Producer
+# Sending data to Kafka
 def send_transactions_to_kafka(num_transactions, topic_name, BOOTSTRAP_SERVERS="localhost:9092"):
     producer = KafkaProducer(bootstrap_servers=BOOTSTRAP_SERVERS)
 
